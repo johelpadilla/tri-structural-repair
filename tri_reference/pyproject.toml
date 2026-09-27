@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tri-reference"
+version = "0.1.2.dev0"
+description = "Reference implementation for 'Systemic Tau as a homeostatic trigger for structural self-repair in event-driven networks' (Tau Regenerative Intelligence, TRI): Systemic Tau on event streams, surrogate nulls, Dynamic Event Graph, controllers, ablations, regenerative XOR task."
+authors = [{name = "Johel Padilla-Villanueva", email = "joel.padilla2@upr.edu"}]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.11"]
+
+[project.optional-dependencies]
+lstm = ["torch>=2.1"]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["tri"]

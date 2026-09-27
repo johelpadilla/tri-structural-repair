@@ -1,0 +1,34 @@
+{
+ "added": "lstm and lstm_ewc for seeds 1-30, experiments E1 and E2",
+ "ewc_lambda": 10,
+ "ewc_rule": "max mean E2 retention_acc on tuning seeds",
+ "ewc_by_lambda": {
+  "10": {
+   "retention_acc_mean": 0.7650000000000001,
+   "adapt_acc_mean": 0.7756000000000001,
+   "n": 5
+  },
+  "100": {
+   "retention_acc_mean": 0.7255,
+   "adapt_acc_mean": 0.7512000000000001,
+   "n": 5
+  },
+  "1000": {
+   "retention_acc_mean": 0.664,
+   "adapt_acc_mean": 0.6481999999999999,
+   "n": 5
+  }
+ },
+ "tuning_seeds": [
+  1001,
+  1002,
+  1003,
+  1004,
+  1005
+ ],
+ "n_rows_added": 120,
+ "n_rows_total": 570,
+ "raw_files_copied": 240,
+ "event_driven_rows_unchanged": true,
+ "finished": "2026-09-27T14:49:41-0400"
+}

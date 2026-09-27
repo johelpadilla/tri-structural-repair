@@ -1,0 +1,683 @@
+{
+ "mode": "full",
+ "NOTE": "",
+ "primary": [
+  {
+   "contrast": "tri_matrix - random_rewire",
+   "endpoint": "post_acc",
+   "n": 30,
+   "mean_diff": 0.27582222222222225,
+   "ci95": [
+    0.23737777777777774,
+    0.3138889101130766
+   ],
+   "ci90": [
+    0.24267520090364497,
+    0.30761012868468274
+   ],
+   "ci_method": "BCa",
+   "d_z": 2.500550055351277,
+   "p_wilcoxon": 1.862645149230957e-09,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": true,
+   "noninferior": true,
+   "verdict": "supported",
+   "rule": "superiority",
+   "p_holm": 7.450580596923828e-09
+  },
+  {
+   "contrast": "tri_matrix - random_time",
+   "endpoint": "post_acc",
+   "n": 30,
+   "mean_diff": 0.21642222222222224,
+   "ci95": [
+    0.18083410751122653,
+    0.2567905467773176
+   ],
+   "ci90": [
+    0.18564524052031625,
+    0.24917777777777778
+   ],
+   "ci_method": "BCa",
+   "d_z": 2.003939789037084,
+   "p_wilcoxon": 1.862645149230957e-09,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": true,
+   "noninferior": true,
+   "verdict": "supported",
+   "rule": "superiority",
+   "p_holm": 7.450580596923828e-09
+  },
+  {
+   "contrast": "tri_matrix - none",
+   "endpoint": "post_acc",
+   "n": 30,
+   "mean_diff": 0.2638,
+   "ci95": [
+    0.22347459912111323,
+    0.29915555555555556
+   ],
+   "ci90": [
+    0.2298888888888889,
+    0.2928888888888889
+   ],
+   "ci_method": "BCa",
+   "d_z": 2.442646672674035,
+   "p_wilcoxon": 1.862645149230957e-09,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": true,
+   "noninferior": true,
+   "verdict": "supported",
+   "rule": "superiority",
+   "p_holm": 7.450580596923828e-09
+  },
+  {
+   "contrast": "tri_matrix - perf",
+   "endpoint": "post_acc",
+   "n": 30,
+   "mean_diff": -0.019022222222222215,
+   "ci95": [
+    -0.035844444444444436,
+    -0.0008444444444444296
+   ],
+   "ci90": [
+    -0.033199999999999986,
+    -0.004203449073345388
+   ],
+   "ci_method": "BCa",
+   "d_z": -0.3846379386889136,
+   "p_wilcoxon": 0.020106996529998977,
+   "equivalent_TOST": true,
+   "superior_by_sesoi": false,
+   "noninferior": true,
+   "verdict": "supported",
+   "rule": "noninferiority",
+   "p_holm": 0.020106996529998977
+  }
+ ],
+ "secondary": [
+  {
+   "contrast": "tri - none",
+   "endpoint": "post_acc",
+   "n": 30,
+   "mean_diff": 0.12862222222222222,
+   "ci95": [
+    0.08792588504290769,
+    0.17316516204778037
+   ],
+   "ci90": [
+    0.09538931879818478,
+    0.1671314560461746
+   ],
+   "ci_method": "BCa",
+   "d_z": 1.0549841898791756,
+   "p_wilcoxon": 4.61253801792603e-05,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": true,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri - none",
+   "endpoint": "compute_post",
+   "n": 30,
+   "mean_diff": 10012.166666666666,
+   "ci95": [
+    7275.952167608708,
+    12686.159399226224
+   ],
+   "ci90": [
+    7685.894608850502,
+    12208.046082554843
+   ],
+   "ci_method": "BCa",
+   "d_z": 1.2858050180750205,
+   "p_wilcoxon": 2.7015948487105505e-05,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": true,
+   "noninferior": true,
+   "units_note": "Event-driven arms count synaptic events, module updates and tau_s pair operations. LSTM arms count multiply-accumulates. The difference is not a single scale."
+  },
+  {
+   "contrast": "tri_matrix - tri",
+   "endpoint": "post_acc",
+   "n": 30,
+   "mean_diff": 0.13517777777777779,
+   "ci95": [
+    0.08597220160635448,
+    0.1926298784878524
+   ],
+   "ci90": [
+    0.09329363128705323,
+    0.18454307760470745
+   ],
+   "ci_method": "BCa",
+   "d_z": 0.8872683517996481,
+   "p_wilcoxon": 1.0609626770019531e-05,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": true,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - tri",
+   "endpoint": "compute_post",
+   "n": 30,
+   "mean_diff": 7161.7,
+   "ci95": [
+    4624.76344889905,
+    10181.103218427583
+   ],
+   "ci90": [
+    4985.740840828506,
+    9690.476785819657
+   ],
+   "ci_method": "BCa",
+   "d_z": 0.9067122455755621,
+   "p_wilcoxon": 9.98377799987793e-07,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": true,
+   "noninferior": true,
+   "units_note": "Event-driven arms count synaptic events, module updates and tau_s pair operations. LSTM arms count multiply-accumulates. The difference is not a single scale."
+  },
+  {
+   "contrast": "tri_matrix - lstm",
+   "endpoint": "post_acc",
+   "n": 30,
+   "mean_diff": -0.17828888888888889,
+   "ci95": [
+    -0.2110257502434547,
+    -0.15264444444444442
+   ],
+   "ci90": [
+    -0.2047161679153801,
+    -0.15590209108379177
+   ],
+   "ci_method": "BCa",
+   "d_z": -2.1812551674780236,
+   "p_wilcoxon": 1.862645149230957e-09,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": false,
+   "noninferior": false
+  },
+  {
+   "contrast": "tri_matrix - lstm",
+   "endpoint": "compute_post",
+   "n": 30,
+   "mean_diff": -71714247.5,
+   "ci95": [
+    -71714668.8614428,
+    -71713959.37060215
+   ],
+   "ci90": [
+    -71714593.95721367,
+    -71714003.85329926
+   ],
+   "ci_method": "BCa",
+   "d_z": -72714.68369595308,
+   "p_wilcoxon": 1.862645149230957e-09,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": false,
+   "noninferior": false,
+   "units_note": "Event-driven arms count synaptic events, module updates and tau_s pair operations. LSTM arms count multiply-accumulates. The difference is not a single scale."
+  },
+  {
+   "contrast": "tri_matrix - lstm_ewc",
+   "endpoint": "post_acc",
+   "n": 30,
+   "mean_diff": -0.1696222222222222,
+   "ci95": [
+    -0.20267267038954823,
+    -0.14273333333333332
+   ],
+   "ci90": [
+    -0.19816365132323943,
+    -0.14650320129290995
+   ],
+   "ci_method": "BCa",
+   "d_z": -1.9624855581975613,
+   "p_wilcoxon": 1.862645149230957e-09,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": false,
+   "noninferior": false
+  },
+  {
+   "contrast": "tri_matrix - lstm_ewc",
+   "endpoint": "compute_post",
+   "n": 30,
+   "mean_diff": -97512447.5,
+   "ci95": [
+    -97512874.90720735,
+    -97512151.28327906
+   ],
+   "ci90": [
+    -97512807.05940852,
+    -97512197.76666667
+   ],
+   "ci_method": "BCa",
+   "d_z": -98872.77665962723,
+   "p_wilcoxon": 1.862645149230957e-09,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": false,
+   "noninferior": false,
+   "units_note": "Event-driven arms count synaptic events, module updates and tau_s pair operations. LSTM arms count multiply-accumulates. The difference is not a single scale."
+  },
+  {
+   "contrast": "tri_matrix - tri_onesided",
+   "endpoint": "post_acc",
+   "n": 30,
+   "mean_diff": 0.26360000000000006,
+   "ci95": [
+    0.22324235294759748,
+    0.2998448841312121
+   ],
+   "ci90": [
+    0.22912010859605225,
+    0.2939820628790853
+   ],
+   "ci_method": "BCa",
+   "d_z": 2.4384138948068537,
+   "p_wilcoxon": 1.862645149230957e-09,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": true,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - tri_onesided",
+   "endpoint": "compute_post",
+   "n": 30,
+   "mean_diff": 17181.333333333332,
+   "ci95": [
+    15556.140711942537,
+    18867.602375104285
+   ],
+   "ci90": [
+    15842.222044511582,
+    18539.441200846926
+   ],
+   "ci_method": "BCa",
+   "d_z": 3.736737460189182,
+   "p_wilcoxon": 1.862645149230957e-09,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": true,
+   "noninferior": true,
+   "units_note": "Event-driven arms count synaptic events, module updates and tau_s pair operations. LSTM arms count multiply-accumulates. The difference is not a single scale."
+  }
+ ],
+ "E2": [
+  {
+   "contrast": "tri_matrix - random_rewire",
+   "endpoint": "adapt_acc",
+   "n": 30,
+   "mean_diff": -0.005500000000000003,
+   "ci95": [
+    -0.014866666666666669,
+    0.0060919037213046905
+   ],
+   "ci90": [
+    -0.013500000000000007,
+    0.003866666666666659
+   ],
+   "ci_method": "BCa",
+   "d_z": -0.1859247774098202,
+   "p_wilcoxon": 0.08639598804323438,
+   "equivalent_TOST": true,
+   "superior_by_sesoi": false,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - random_rewire",
+   "endpoint": "retention_acc",
+   "n": 30,
+   "mean_diff": 0.03825,
+   "ci95": [
+    0.011347011010368899,
+    0.06974999999999998
+   ],
+   "ci90": [
+    0.015636985027853573,
+    0.06416666666666668
+   ],
+   "ci_method": "BCa",
+   "d_z": 0.46131018803891505,
+   "p_wilcoxon": 0.016880932087628427,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": false,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - random_time",
+   "endpoint": "adapt_acc",
+   "n": 30,
+   "mean_diff": -0.004633333333333334,
+   "ci95": [
+    -0.020533333333333334,
+    0.005299999999999994
+   ],
+   "ci90": [
+    -0.017899999999999985,
+    0.0038000000000000004
+   ],
+   "ci_method": "BCa",
+   "d_z": -0.13103425170668317,
+   "p_wilcoxon": 0.6652231805932128,
+   "equivalent_TOST": true,
+   "superior_by_sesoi": false,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - random_time",
+   "endpoint": "retention_acc",
+   "n": 30,
+   "mean_diff": 0.00616666666666668,
+   "ci95": [
+    -0.01924999999999998,
+    0.031166666666666683
+   ],
+   "ci90": [
+    -0.014833333333333306,
+    0.02758333333333334
+   ],
+   "ci_method": "BCa",
+   "d_z": 0.0859349604121266,
+   "p_wilcoxon": 0.7326234946149506,
+   "equivalent_TOST": true,
+   "superior_by_sesoi": false,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - none",
+   "endpoint": "adapt_acc",
+   "n": 30,
+   "mean_diff": 0.022899999999999993,
+   "ci95": [
+    0.011433333333333327,
+    0.03650000000000002
+   ],
+   "ci90": [
+    0.012799999999999995,
+    0.03403333333333332
+   ],
+   "ci_method": "BCa",
+   "d_z": 0.6405863383163635,
+   "p_wilcoxon": 0.0038486179000331495,
+   "equivalent_TOST": true,
+   "superior_by_sesoi": false,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - none",
+   "endpoint": "retention_acc",
+   "n": 30,
+   "mean_diff": -0.007416666666666668,
+   "ci95": [
+    -0.03780792793879464,
+    0.019083333333333324
+   ],
+   "ci90": [
+    -0.033250000000000016,
+    0.014333333333333325
+   ],
+   "ci_method": "BCa",
+   "d_z": -0.09254491801568085,
+   "p_wilcoxon": 0.8389785540166427,
+   "equivalent_TOST": true,
+   "superior_by_sesoi": false,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - perf",
+   "endpoint": "adapt_acc",
+   "n": 30,
+   "mean_diff": -0.0026000000000000133,
+   "ci95": [
+    -0.012500000000000004,
+    0.012245412759840271
+   ],
+   "ci90": [
+    -0.011000000000000012,
+    0.009933333333333315
+   ],
+   "ci_method": "BCa",
+   "d_z": -0.07521434440108199,
+   "p_wilcoxon": 0.22490195842435756,
+   "equivalent_TOST": true,
+   "superior_by_sesoi": false,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - perf",
+   "endpoint": "retention_acc",
+   "n": 30,
+   "mean_diff": 0.029583333333333316,
+   "ci95": [
+    0.0030833333333333194,
+    0.05641666666666665
+   ],
+   "ci90": [
+    0.006333333333333302,
+    0.051666666666666645
+   ],
+   "ci_method": "BCa",
+   "d_z": 0.38824507760105154,
+   "p_wilcoxon": 0.04629504170808335,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": false,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - lstm",
+   "endpoint": "adapt_acc",
+   "n": 30,
+   "mean_diff": -0.24623333333333328,
+   "ci95": [
+    -0.27063333333333334,
+    -0.22251544612616359
+   ],
+   "ci90": [
+    -0.2667333333333334,
+    -0.22645779577859326
+   ],
+   "ci_method": "BCa",
+   "d_z": -3.60835464218334,
+   "p_wilcoxon": 1.862645149230957e-09,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": false,
+   "noninferior": false
+  },
+  {
+   "contrast": "tri_matrix - lstm",
+   "endpoint": "retention_acc",
+   "n": 30,
+   "mean_diff": 0.09816666666666668,
+   "ci95": [
+    0.030749999999999993,
+    0.16341666666666663
+   ],
+   "ci90": [
+    0.04133333333333332,
+    0.15391309662941371
+   ],
+   "ci_method": "BCa",
+   "d_z": 0.5203738686173317,
+   "p_wilcoxon": 0.008993075916178202,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": false,
+   "noninferior": true
+  },
+  {
+   "contrast": "tri_matrix - lstm_ewc",
+   "endpoint": "adapt_acc",
+   "n": 30,
+   "mean_diff": -0.3288666666666666,
+   "ci95": [
+    -0.35957747117565403,
+    -0.2954333333333333
+   ],
+   "ci90": [
+    -0.35323333333333323,
+    -0.2993
+   ],
+   "ci_method": "BCa",
+   "d_z": -3.5867613374035074,
+   "p_wilcoxon": 1.7333066441991056e-06,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": false,
+   "noninferior": false
+  },
+  {
+   "contrast": "tri_matrix - lstm_ewc",
+   "endpoint": "retention_acc",
+   "n": 30,
+   "mean_diff": 0.023499999999999983,
+   "ci95": [
+    -0.04426801698308712,
+    0.08749999999999997
+   ],
+   "ci90": [
+    -0.03341666666666667,
+    0.07816666666666666
+   ],
+   "ci_method": "BCa",
+   "d_z": 0.12405462262831762,
+   "p_wilcoxon": 0.39332186202307995,
+   "equivalent_TOST": false,
+   "superior_by_sesoi": false,
+   "noninferior": true
+  }
+ ],
+ "checks": {
+  "F6_lesion_detected_fraction": 0.9666666666666667,
+  "false_alarms_per_1000_mean": 4.0,
+  "H1_verdict": "supported",
+  "H1_arm": "tri_matrix",
+  "F5_baseline_outside_null95_fraction": 0.9,
+  "F5_signed_mean_uninformative": false,
+  "design_check_chosen": {
+   "W": 280,
+   "bin": 1
+  },
+  "F5_no_window": false
+ },
+ "central_claim": "not refuted",
+ "sensitivity": {
+  "rule": "E1 seeds whose no-regeneration pre_acc is at least 0.8",
+  "n_seeds": 26,
+  "seeds": [
+   1,
+   2,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   13,
+   14,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30
+  ],
+  "primary": [
+   {
+    "contrast": "tri_matrix - random_rewire",
+    "endpoint": "post_acc",
+    "n": 26,
+    "mean_diff": 0.29307692307692307,
+    "ci95": [
+     0.25284816680722444,
+     0.331598068046244
+    ],
+    "ci90": [
+     0.2583333333333333,
+     0.32450993891621654
+    ],
+    "ci_method": "BCa",
+    "d_z": 2.783397003591022,
+    "p_wilcoxon": 2.9802322387695312e-08,
+    "equivalent_TOST": false,
+    "superior_by_sesoi": true,
+    "noninferior": true,
+    "verdict": "supported",
+    "rule": "superiority"
+   },
+   {
+    "contrast": "tri_matrix - random_time",
+    "endpoint": "post_acc",
+    "n": 26,
+    "mean_diff": 0.2338717948717949,
+    "ci95": [
+     0.19455206540489633,
+     0.27264102564102566
+    ],
+    "ci90": [
+     0.20011731965790966,
+     0.26633480393776643
+    ],
+    "ci_method": "BCa",
+    "d_z": 2.2275986688177722,
+    "p_wilcoxon": 2.9802322387695312e-08,
+    "equivalent_TOST": false,
+    "superior_by_sesoi": true,
+    "noninferior": true,
+    "verdict": "supported",
+    "rule": "superiority"
+   },
+   {
+    "contrast": "tri_matrix - none",
+    "endpoint": "post_acc",
+    "n": 26,
+    "mean_diff": 0.28089743589743593,
+    "ci95": [
+     0.2367353926348361,
+     0.31694871794871793
+    ],
+    "ci90": [
+     0.24251282051282053,
+     0.3100512820512821
+    ],
+    "ci_method": "BCa",
+    "d_z": 2.6656548528696713,
+    "p_wilcoxon": 2.9802322387695312e-08,
+    "equivalent_TOST": false,
+    "superior_by_sesoi": true,
+    "noninferior": true,
+    "verdict": "supported",
+    "rule": "superiority"
+   },
+   {
+    "contrast": "tri_matrix - perf",
+    "endpoint": "post_acc",
+    "n": 26,
+    "mean_diff": -0.022205128205128193,
+    "ci95": [
+     -0.04072289001529205,
+     -0.0022369450530886417
+    ],
+    "ci90": [
+     -0.03792307692307692,
+     -0.0058205128205128034
+    ],
+    "ci_method": "BCa",
+    "d_z": -0.44176439502735887,
+    "p_wilcoxon": 0.01475234024082751,
+    "equivalent_TOST": true,
+    "superior_by_sesoi": false,
+    "noninferior": true,
+    "verdict": "supported",
+    "rule": "noninferiority"
+   }
+  ]
+ }
+}

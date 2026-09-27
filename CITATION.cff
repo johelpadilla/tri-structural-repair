@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "Systemic Tau as a homeostatic trigger for structural self-repair in event-driven networks"
+message: "If you use this work, please cite the article."
+type: software
+authors:
+  - family-names: Padilla-Villanueva
+    given-names: Johel
+    orcid: "https://orcid.org/0000-0002-5797-6931"
+    affiliation: "Department of Environmental Health, University of Puerto Rico Medical Sciences Campus"
+    email: joel.padilla2@upr.edu
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23001551
+    description: "Reference implementation and trial-level records"
+  - type: doi
+    value: 10.5281/zenodo.23001549
+    description: "Article"
+repository-code: "https://github.com/johelpadilla/tri-structural-repair"
+url: "https://doi.org/10.5281/zenodo.23001549"
+license: MIT
+date-released: 2026-09-27
+version: 0.1.2.dev0

@@ -1,0 +1,29 @@
+{
+ "ewc_lambda": 10,
+ "rule": "max mean E2 retention_acc on tuning seeds",
+ "seeds": [
+  1001,
+  1002,
+  1003,
+  1004,
+  1005
+ ],
+ "by_lambda": {
+  "10": {
+   "retention_acc_mean": 0.7650000000000001,
+   "adapt_acc_mean": 0.7756000000000001,
+   "n": 5
+  },
+  "100": {
+   "retention_acc_mean": 0.7255,
+   "adapt_acc_mean": 0.7512000000000001,
+   "n": 5
+  },
+  "1000": {
+   "retention_acc_mean": 0.664,
+   "adapt_acc_mean": 0.6481999999999999,
+   "n": 5
+  }
+ },
+ "elapsed_s": 43.41
+}

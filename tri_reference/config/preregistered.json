@@ -1,0 +1,230 @@
+{
+ "_comment": "Pre-specified parameters for the TRI experiment (Padilla-Villanueva, Systemic Tau as a homeostatic trigger for structural self-repair in event-driven networks). Change only via a dated, versioned amendment BEFORE any confirmatory run. Amendment 0.1.1-draft (2026-09-27): calibration lies inside one input regime (trials 2000-2499); the lesion is at trial 2900 so trials 2500-2899 estimate same-regime false alarms; H1 support also requires at most 20 false alarms per 1000 trials; the regulated mean excludes bridges spawned after calibration; yoked rewiring reuses the sign of each TRI operation; H5 uses the same refutation rule as H2 and H3. Amendment 0.1.2-draft (2026-09-27), after pilot seeds 9001-9005 (not evidence) and before any confirmatory run: the signed mean does not leave its band when edges are deleted, because pair changes cancel, and the old repair added a pair that was not a baseline edge. The operative alarm is the mean absolute tau_b change on edges present at calibration. Window is fixed at 280 ticks (20 trials), the shortest pre-specified candidate that fits inside the 50-trial detection budget and cleared the 3 SD band on that pilot. An alarm restores the missing baseline edge with the largest drop in absolute concordance and, in E1, adds no other edge. The signed-mean arm stays as a control. Yokes and primary contrasts follow tri_matrix. An alarm that finds the baseline wiring already intact is counted toward false alarms and is not yoked. The design check does not replace this window, and the signed mean sitting inside its null does not void the primary claim.",
+ "version": "0.1.2-draft",
+ "seeds": {
+  "confirmatory": [
+   1,
+   30
+  ],
+  "tuning": [
+   1001,
+   1005
+  ]
+ },
+ "task": {
+  "T": 14,
+  "readout_start": 3,
+  "c_star": 2,
+  "n_trials": 6000,
+  "block": 1000,
+  "E1_regimes": [
+   {
+    "name": "A",
+    "r_on": 0.7,
+    "r_off": 0.02,
+    "swap_b2": false
+   },
+   {
+    "name": "B",
+    "r_on": 0.55,
+    "r_off": 0.05,
+    "swap_b2": false
+   }
+  ],
+  "E2_regimes": [
+   {
+    "name": "A'",
+    "r_on": 0.7,
+    "r_off": 0.02,
+    "swap_b2": false
+   },
+   {
+    "name": "B'",
+    "r_on": 0.7,
+    "r_off": 0.02,
+    "swap_b2": true
+   }
+  ]
+ },
+ "model": {
+  "n_in": 4,
+  "n_hid": 2,
+  "n_out": 1,
+  "max_bridges": 4,
+  "leak": 0.3,
+  "w0": 1.0,
+  "noise_sd": 0.05,
+  "theta_init_hidden": [
+   1.2,
+   2.2
+  ],
+  "theta_init_output": [
+   0.6,
+   1.4
+  ],
+  "theta_bounds": [
+   0.3,
+   5.0
+  ],
+  "initial_edges": [
+   [
+    "I1",
+    "H1",
+    1
+   ],
+   [
+    "I4",
+    "H1",
+    1
+   ],
+   [
+    "I2",
+    "H2",
+    1
+   ],
+   [
+    "I3",
+    "H2",
+    1
+   ],
+   [
+    "H1",
+    "O",
+    1
+   ],
+   [
+    "H2",
+    "O",
+    1
+   ]
+  ]
+ },
+ "oec": {
+  "block_trials": 50,
+  "sigma": 0.1,
+  "parent_decay": 0.2
+ },
+ "tau": {
+  "W": 280,
+  "bin": 1,
+  "every_trials": 1
+ },
+ "timeline": {
+  "cal_start": 2000,
+  "cal_end": 2500,
+  "lesion_trial": 2900,
+  "lesion_frac": 0.5,
+  "pre_window": 400,
+  "post_window": 1500
+ },
+ "detection": {
+  "latency_trials": 50,
+  "false_alarms_per_1000_max": 20
+ },
+ "controller": {
+  "kappa": 3.0,
+  "refractory_trials": 20,
+  "entrain_trials": 10,
+  "eta_entrain": 0.05,
+  "check_after_trials": 10,
+  "bridge_if_reduction_below": 0.5,
+  "prune_silent_trials": 50,
+  "perf_window_trials": 20
+ },
+ "null": {
+  "n_windows": 100,
+  "n_surrogates": 20,
+  "min_shift_ticks": 14
+ },
+ "lstm": {
+  "hidden": 16,
+  "lr": 0.01,
+  "ewc_lambda_grid": [
+   10,
+   100,
+   1000
+  ],
+  "ewc_lambda": 100,
+  "fisher_trials": 200,
+  "lesion_frac": 0.5
+ },
+ "analysis": {
+  "primary_arm": "tri_matrix",
+  "primary_endpoint": "post_acc",
+  "sesoi": 0.05,
+  "sensitivity_pre_acc_min": 0.8,
+  "f5_min_fraction_outside_null": 0.8,
+  "alpha": 0.05,
+  "n_boot": 10000,
+  "ci": "BCa",
+  "primary_contrasts": [
+   [
+    "tri_matrix",
+    "random_rewire"
+   ],
+   [
+    "tri_matrix",
+    "random_time"
+   ],
+   [
+    "tri_matrix",
+    "none"
+   ],
+   [
+    "tri_matrix",
+    "perf"
+   ]
+  ],
+  "noninferiority": [
+   [
+    "tri_matrix",
+    "perf"
+   ]
+  ],
+  "secondary_contrasts": [
+   [
+    "tri",
+    "none"
+   ],
+   [
+    "tri_matrix",
+    "tri"
+   ],
+   [
+    "tri_matrix",
+    "lstm"
+   ],
+   [
+    "tri_matrix",
+    "lstm_ewc"
+   ],
+   [
+    "tri_matrix",
+    "tri_onesided"
+   ]
+  ]
+ },
+ "arms_E1": [
+  "tri",
+  "random_rewire",
+  "random_time",
+  "none",
+  "perf",
+  "tri_onesided",
+  "tri_matrix",
+  "intact_tri",
+  "intact_none",
+  "lstm",
+  "lstm_ewc"
+ ],
+ "arms_E2": [
+  "tri_matrix",
+  "tri",
+  "random_rewire",
+  "random_time",
+  "none",
+  "perf",
+  "lstm",
+  "lstm_ewc"
+ ]
+}
